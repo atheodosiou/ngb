@@ -1,0 +1,13 @@
+.active{
+  color: white !important;
+}
+
+.version{ color: lightgray; }
+
+.link{
+  color: lightgray;
+  &:hover{
+    color: white;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,73 @@
+<div class="container-fluid bg-light pt-3">
+  <div class="row mb-2">
+    <div class="col-12">
+      <h3>Dropdown</h3>
+      <p class="text-secondary lead mb-0">Dropdown is used to select an item from a list of options.</p>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-12">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <div class="row mb-2">
+            <div class="col-4">
+              <ngb-dropdown [options]="cities" optionLabel="name" optionValue="code" [(ngModel)]="selectedCity"
+                placeholder="Select a city" [showClear]="true"></ngb-dropdown>
+            </div>
+            <!-- <div class="col-4">
+              <ngb-dropdown [options]="cities" optionLabel="name" optionValue="code" [(ngModel)]="selectedCity"
+                placeholder="Select a city" [showClear]="true"></ngb-dropdown>
+            </div> -->
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <span class="text-primary fw-bold">Selected City:</span> {{selectedCity}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-12">
+      <h4>Import</h4>
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <p class="lead mb-0">
+            {{importSnippet}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-12">
+      <h4>Getting Started</h4>
+      <p class="text-secondary mb-2">Dropdown requires a value to bind and a collection of options.</p>
+      <div class="card shadow-sm mb-2">
+        <div class="card-body">
+          <p class="lead mb-0">
+            {{declareSnippet}}
+          </p>
+        </div>
+      </div>
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <pre class="lead fs-6">{{tsSnippet}}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-12">
+      <h4>Value Binding</h4>
+      <p class="text-secondary mb-2">The option itself is bound to the <span class="text-primary">label</span> 'key' by
+        default, use <span class="text-primary">optionValue</span> to customize the property to pass as the value.</p>
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <p class="lead mb-0">{{valueBindingSnippet}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+<div class="container-fluid bg-light pt-3">
+  <div class="row mb-2">
+    <div class="col-12">
+      <h4>Prerequisites</h4>
+      <p class="text-secondary">
+        <span class="text-primary">Ngb-dropdown</span> uses Bootstrap for styling. If you don't have it already
+        installed, install it with the command bellow.
+      </p>
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <p class="lead mb-0">npm i bootstrap --save</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-12">
+      <p class="text-secondary mb-2">After installing bootstrap, you must inclue styles into you global syles.css/.scss
+        file
+        like bellow.</p>
+      <div class="card shadow-sm mb-2">
+        <div class="card-body">
+          <p class="lead mb-0">@import "~bootstrap/dist/css/bootstrap.css"</p>
+        </div>
+      </div>
+      <p class="text-secondary mb-2">Or declare this styles into angular.json file, in the styels section.</p>
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <pre class="lead mb-0 fs-6">{{importStylesSnippet}}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-12">
+      <h4>Installing</h4>
+      <p class="text-seondary mb-2">Ngb-dropdown is available at npm, if you have an existing application run the
+        following command to download it to your project.</p>
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <p class="lead mb-0">npm i @atheodosiou/ngb --save</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-12">
+      <h5>Enabling animations <span class="text-secondary fs-6">(optional)</span></h5>
+      <p class="text-secondary mb-2">
+        Ngb-dropdown utilize angular animations to improve the user experience,
+        starting with Angular 4 animations have their own module so you need to import <strong
+          class="text-primary">BrowserAnimationsModule</strong> to your application.
+        If you prefer to disable animations globally, import <strong class="text-primary">NoopAnimationsModule</strong>
+        instead.
+      </p>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-12">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <p class="lead mb-0">
+            npm install @angular/animations --save
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-2">
+    <div class="col-12">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <pre class="lead fs-6">{{animationSnippet}}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+.footer{
+  border-top: 1px solid lightgray;
+  background-color: rgba(211, 211, 211, 0.452);
+
+  .user-link{
+    color: #7952B3;
+    &:hover{
+      color: darken($color: #7952B3, $amount: 10);
+    }
+  }
+}

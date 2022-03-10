@@ -1,0 +1,71 @@
+.ngb-dropdown__wrapper[disabled] {
+  background-color: rgba(211, 211, 211, 0.25);
+
+  .ngb-input,
+  .ngb-clear__button,
+  .ngb-open__button,
+  .ngb-close__button {
+    pointer-events: none;
+  }
+
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+.ngb-input {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.ngb-list__wrapper {
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: .25rem;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: .25rem;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .ngb-list__item {
+    padding: 0.25rem;
+
+    &:hover {
+      background-color: rgba(211, 211, 211, 0.125);
+      border-radius: .25rem;
+      cursor: pointer;
+    }
+
+    &.selected {
+      background-color: rgba(211, 211, 211, 0.25);
+      border-radius: .25rem;
+    }
+  }
+}
+
+
+.ngb-dropdown {
+  position: relative;
+
+  .ngb-dropdown__overlay {
+    position: absolute;
+    z-index: 1000;
+  }
+}
